@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSunny E-Commerce</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <link rel="shortcut icon" href="images/loggo.jpg" type="image/x-icon" >
+  <script type="module" crossorigin src="/assets/addToCart-D82vFtxi.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/showToast-BXcVP8Bu.js">
+  <link rel="stylesheet" crossorigin href="/assets/showToast-DgX7whS5.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <h1 class="logo">CodeCrafted By Sufyan</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="addToCart.html" class="cart" id="cart-value"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+              <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg> (0)</a>
+        </div>
+    </header>
+    
+
+    <section class="addToCartElement">
+        <div class="container">
+            <section>
+                <div id="productCartContainer">
+
+                </div>
+            </section>
+            <section class="productCartTotalElem">
+                <div class="productCartTotalElement">
+                  <p class="sumary">Selected Offer Summary</p>
+                  <div class="productOrderTotal">
+                    <div>
+                      <p>Sub Total:</p>
+                      <p class="productSubTotal">0</p>
+                    </div>
+                    <div>
+                      <p>Tax:</p>
+                      <p class="productTax">$50</p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p>Final Total:</p>
+                      <p class="productFinalTotal">0</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </div>
+    </section>
+
+    <template id="productCartTemplate">
+        <div class="cart-container" id="card1">
+            <h1 class="card-category"></h1>
+            <div class="cart-item">
+                <img src="" alt="" class="cart-image">
+                <div class="item-details">
+                    <h2></h2>
+                    <p>/p>
+                </div>
+                <div class="quantity-controls">
+                    <button class="quantity-btn-dec">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn-inc">+</button>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+      </template>
+
+    
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-columns">
+      
+            <!-- About Us Section -->
+            <div class="footer-column">
+              <h4>About Us</h4>
+              <p>We are a leading e-commerce store providing top  notch products worldwide. Our goal is to make shopping easy and accessible for everyone.</p>
+            </div>
+      
+            <!-- Quick Links Section -->
+            <div class="footer-column">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Info Section -->
+            <div class="footer-column">
+              <h4>Contact Us</h4>
+              <ul>
+                <li><i class="fa-solid fa-phone"></i> +1 234 567 890</li>
+                <li><i class="fa-solid fa-envelope"></i> info@example.com</li>
+                <li><i class="fa-solid fa-map-marker-alt"></i> 1234 Street Name, City, Country</li>
+              </ul>
+            </div>
+      
+            <!-- Social Media Section -->
+            <div class="footer-column">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            
+          </div>
+      
+          <div class="footer-bottom">
+            <p>@Design and Code by Sufyan Ali</p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>

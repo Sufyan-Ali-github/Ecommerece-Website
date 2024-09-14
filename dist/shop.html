@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Shop</title>
+    <link rel="shortcut icon" href="images/loggo.jpg" type="image/x-icon" >
+  <script type="module" crossorigin src="/assets/showToast-BXcVP8Bu.js"></script>
+  <script type="module" crossorigin src="/assets/main-FnEsJhk2.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/showToast-DgX7whS5.css">
+</head>
+<body>
+    <header class="header">
+        <script src="./navbar.js"></script>
+      </header>
+
+    
+
+     <!-- Product Section More -->
+    <section class="product-upper-section">
+        <div class="product-upper products-upper2">
+          <div class="extra-text">
+            <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Show now</a>
+          </div>
+          <div class="extra-img extra-laptop2">
+            <img src="./images/laptop.png" alt=""  />
+          </div>
+        </div>
+        <div class="product-upper  products-upper2">
+          <div class="extra-text">
+            <p>new year sale</p>
+              <h3>40% discount on speakers</h3>
+              <a href="#">Show now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./images/headphoneEcom.png" alt="" />
+          </div>   
+        </div>
+        <div class="product-upper  products-upper2">
+          <div class="extra-text">
+            <p>new year sale</p>
+              <h3>get and extra 50% off</h3>
+              <a href="#">Show now</a>
+          </div>
+          <div class="extra-img extra-laptop">
+            <img src="./images/mobiles.png" alt="" />
+          </div>
+        </div>
+      </section>
+     
+  
+      <section class="section-products container">
+        <section class="container">
+          <div id="productContainer"></div>
+        </section>
+      </section>
+  
+  
+  
+      <template id="productTemplate">
+        <div class="card-container" id="cardValue">
+          <div class="card">
+            <p class="card-category card-cate"> </p>
+            <img src="./public/images/watch.png" alt="Product Image" class="card-image" >
+            <div class="card-content">
+              <h2 class="card-title">Product Name</h2>
+              <p class="card-brand"> Example Brand</p>
+              <p class="card-description"></p>
+              <strong>Price:</strong> <span class="card-price"></span>  <span class="actual-price"></span>
+              <p></p>
+              <strong>Stock:</strong> <span class="card-stock"> </span>
+              <div class="cart-actions">
+                <div class="quantity-controls">
+                    <button class="decrement">-</button>
+                    <p class="productQuantity"> 1</p>
+                    <button class="increment">+</button>
+                </div>  
+            </div>
+            <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+              <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg> Add to Cart </button>
+            </div>
+          </div>
+        </div>
+      </template>
+  
+  
+
+
+
+
+      <footer class="footer">
+        <script src="footer.js"></script>
+      </footer>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

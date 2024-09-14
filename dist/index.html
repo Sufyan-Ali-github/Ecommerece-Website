@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <link rel="shortcut icon" href="images/loggo.jpg" type="image/x-icon" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>DevSunny E-Commerce</title>
+  <script type="module" crossorigin src="/assets/showToast-BXcVP8Bu.js"></script>
+  <script type="module" crossorigin src="/assets/main-FnEsJhk2.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/showToast-DgX7whS5.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+          <h1 class="logo">CodeCrafted By Sufyan</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="addToCart.html" class="cart" id="cart-value"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+              <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg> (0)</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Explore the Latest in Tech Industries</h2>
+            <emp>Your Destination for Cutting-Edge Gadgets!</emp>
+            <p>Welcome to eComStore, your ultimate destination for
+              cutting-edge gadgets! Explore the latest in tech innovation and
+              style with us. Shop now and discover a world of possibilities!</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div>
+          <img src="/images/heroSection.svg" alt="">
+          
+        </div>      
+    </section>
+
+   <!-- Product Section More -->
+    <section class="product-upper-section">
+      <div class="product-upper products-upper2">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop2">
+          <img src="./images/laptop.png" alt=""  />
+        </div>
+      </div>
+      <div class="product-upper  products-upper2">
+        <div class="extra-text">
+          <p>new year sale</p>
+            <h3>40% discount on speakers</h3>
+            <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./images/headphoneEcom.png" alt="" />
+        </div>   
+      </div>
+      <div class="product-upper  products-upper2">
+        <div class="extra-text">
+          <p>new year sale</p>
+            <h3>get and extra 50% off</h3>
+            <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./images/mobiles.png" alt="" />
+        </div>
+      </div>
+    </section>
+   
+    
+   <!-- Policy Section -->
+    <section class="section-policy">
+      <h2>Why use this Store?</h2>
+      <div class="container2 grid grid-four--cols">
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>worldwide shipping</p>
+            <p>order above $100</p>
+          </div>
+        </div>
+
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>Easy 30 Day Returns</p>
+            <p>Back Returns in 7 Days</p>
+          </div>
+        </div>
+
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>money back guarantee</p>
+            <p>guarantee with in 30-Days</p>
+          </div>
+        </div>
+
+        <div class="div-policy">
+          <div class="icons">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div class="div-policy-text">
+            <p>Easy Online Support</p>
+            <p>24/7 Any time support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="section-products container">
+      <section class="container">
+        <div id="productContainer"></div>
+      </section>
+    </section>
+
+
+
+    <template id="productTemplate">
+      <div class="card-container" id="cardValue">
+        <div class="card">
+          <p class="card-category card-cate"> </p>
+          <img src="./public/images/watch.png" alt="Product Image" class="card-image" >
+          <div class="card-content">
+            <h2 class="card-title">Product Name</h2>
+            <p class="card-brand"> Example Brand</p>
+            <p class="card-description"></p>
+            <strong>Price:</strong> <span class="card-price"></span>  <span class="actual-price"></span>
+            <p></p>
+            <strong>Stock:</strong> <span class="card-stock"> </span>
+            <div class="cart-actions">
+              <div class="quantity-controls">
+                  <button class="decrement">-</button>
+                  <p class="productQuantity"> 1</p>
+                  <button class="increment">+</button>
+              </div>  
+          </div>
+          <button class="add-to-cart"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+            <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-columns">
+    
+          <!-- About Us Section -->
+          <div class="footer-column">
+            <h4>About Us</h4>
+            <p>We are a leading e-commerce store providing top  notch products worldwide. Our goal is to make shopping easy and accessible for everyone.</p>
+          </div>
+    
+          <!-- Quick Links Section -->
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Info Section -->
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i> +1 234 567 890</li>
+              <li><i class="fa-solid fa-envelope"></i> info@example.com</li>
+              <li><i class="fa-solid fa-map-marker-alt"></i> 1234 Street Name, City, Country</li>
+            </ul>
+          </div>
+    
+          <!-- Social Media Section -->
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          
+        </div>
+    
+        <div class="footer-bottom">
+          <p>@Design and Code by Sufyan Ali</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    
+</body>
+</html>
